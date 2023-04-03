@@ -1,0 +1,89 @@
+{
+  "info": {
+    "_postman_id": "67d77886-7459-421b-ab90-0a3f16022e71",
+    "name": "endpoint deno",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "24071348"
+  },
+  "item": [
+    {
+      "name": "post un producto",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Jose carlos\",\r\n    \"birthDate\": \"26/01/99\",\r\n    \"lastName\": \"alamar\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8083/api/users/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8083",
+          "path": ["api", "users", ""]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "todos los usuarios",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8083/api/users/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8083",
+          "path": ["api", "users", ""]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "USUARIO POR ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8083/api/users/############ID",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8083",
+          "path": ["api", "users", ""],
+          "hash": "###########ID"
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PatchUser",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"JosejUAN\",\r\n    \"birthDate\": \"26/01/99\",\r\n    \"lastName\": \"alamar\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8083/api/users/4f122570-d1f7-11ed-b658-9b32b3d103ff",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8083",
+          "path": ["api", "users", "4f122570-d1f7-11ed-b658-9b32b3d103ff"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
